@@ -1,0 +1,36 @@
+{
+  "name": "nvidia-h264-enc-batch",
+  "version": "1.0.0",
+  "description": "Nvidia H264 batch encoding using ffmpeg",
+  "main": "h264.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node h264.js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wongchichong/h264.git"
+  },
+  "keywords": [
+    "Nvidia",
+    "H264",
+    "batch",
+    "encoding",
+    "using",
+    "ffmpeg"
+  ],
+  "author": "Wong Chi Chong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wongchichong/h264/issues"
+  },
+  "homepage": "https://github.com/wongchichong/h264#readme",
+  "dependencies": {
+    "bytes": "^3.1.2",
+    "child_process": "^1.0.2",
+    "colors": "^1.4.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "trash": "^8.1.0"
+  }
+}

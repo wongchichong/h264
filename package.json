@@ -2,10 +2,12 @@
   "name": "nvidia-h264-enc-batch",
   "version": "1.0.0",
   "description": "Nvidia H264 batch encoding using ffmpeg",
-  "main": "h264.js",
+  "main": "h264",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node h264.js ."
+    "build": "tsc h264.ts",
+    "start": "node h264.js \"S:\transfer\td\""
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,15 @@
     "child_process": "^1.0.2",
     "colors": "^1.4.0",
     "fs": "^0.0.1-security",
+    "get-video-duration": "^4.1.0",
+    "global": "^4.4.0",
     "path": "^0.12.7",
-    "trash": "^8.1.0"
-  }
+    "trash": "^8.1.0",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@types/bytes": "^3.1.1",
+    "@types/node": "^18.11.9"
+  },
+  "packageManager": "yarn@1.22.19"
 }
